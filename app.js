@@ -14,9 +14,9 @@ var PikePlace = {
   //This calculates
   calculate: function() {
     for(hour in hours) {
-      var calcDem = Math.floor(this.generateRandom(this.min, this.max) * this.average);
-      this.demands.push(calcDem);
-      this.total += calcDem;
+      var cookiesThisHour = Math.floor(this.generateRandom(this.min, this.max) * this.average);
+      this.demands.push(cookiesThisHour);
+      this.total += cookiesThisHour;
     }
   },
 //This prints the lists to the page
@@ -33,7 +33,6 @@ var PikePlace = {
       liEl.appendChild(nestedUlEl);
       ulEl.appendChild(liEl);
     }
-
     sectionEl.appendChild(ulEl);
   }
 }
