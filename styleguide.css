@@ -1,0 +1,33 @@
+/*http://www.colorcombos.com/color-schemes/4292/ColorCombo4292.html*/
+
+#ultimateNav {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 19px;
+  border-bottom: solid;
+  border-color: #999999;
+  border-width: thin;
+  margin-top: 3%;
+  border-radius: 90%;
+}
+
+#ultimateNav section {
+  width: 61.25%;
+  margin: 0 auto;
+}
+
+#ultimateNav section a {
+  text-decoration: none;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+  color: #999999;
+}
+
+main > header {
+  text-align: center;
+  font-size: 84px;
+  color: #6B6B6B;
+  font-family: 'Euphoria Script', cursive;
+  background: #DEADA1;
+  padding-top: 100px;
+  padding: 100px;
+}
