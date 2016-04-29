@@ -27,7 +27,79 @@ main > header {
   font-size: 84px;
   color: #6B6B6B;
   font-family: 'Euphoria Script', cursive;
+  /*font-family: 'Josefin Sans', sans-serif;*/
   background: #DEADA1;
   padding-top: 100px;
   padding: 100px;
+}
+
+main > section {
+  margin-top: 3%;
+  border-top: solid;
+  border-bottom: solid;
+  border-color: #999999;
+  border-width: thin;
+  font-size: 24px;
+  color: #999999;
+  padding-top: 2%;
+}
+
+main > section > header {
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#colourPalette {
+  border-radius: 10%;
+}
+
+#swatches {
+  width: 524px;
+  margin: 0 auto;
+}
+
+.swatch {
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #999999;
+  margin-top: 5%;
+}
+
+.colorSwatch {
+  border-radius: 50%;
+}
+
+.color1 {
+  width: 100px;
+  height: 100px;
+  background: #DEADA1;
+}
+
+.color2 {
+  width: 100px;
+  height: 100px;
+  background: #FF8362;
+}
+
+.color3 {
+  width: 100px;
+  height: 100px;
+  background: #999999;
+}
+
+.color4 {
+  width: 100px;
+  height: 100px;
+  background: #6B6B6B;
+}
+
+.color5 {
+  width: 100px;
+  height: 100px;
+  background: #3C4663;
+}
+
+p {
+  text-align: center;
 }
