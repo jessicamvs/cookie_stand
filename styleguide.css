@@ -1,4 +1,5 @@
 /*http://www.colorcombos.com/color-schemes/4292/ColorCombo4292.html*/
+/*http://stackoverflow.com/questions/7273927/image-greyscale-with-css-re-color-on-mouse-over*/
 
 #ultimateNav {
   font-family: 'Josefin Sans', sans-serif;
@@ -10,15 +11,28 @@
   border-radius: 90%;
 }
 
-#ultimateNav section {
-  width: 61.25%;
-  margin: 0 auto;
+img {
+  height: 18px;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
 }
+
+img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
+
+/*#ultimateNav section {
+  /*width: 100%;
+  margin: 0 auto;
+  }*/
+
 
 #ultimateNav section a {
   text-decoration: none;
-  margin-left: 7.5%;
-  margin-right: 7.5%;
+  margin-left: 6%;
+  margin-right: 6%;
   color: #999999;
 }
 
@@ -102,4 +116,24 @@ main > section > header {
 
 p {
   text-align: center;
+  font-family: 'Josefin Slab', serif;
+  font-size: 16px;
+  color: black;
+  letter-spacing: .1em;
+}
+
+.left {
+  float: left;
+  width: 450px;
+  height: 208px;
+  margin-bottom: 3%;
+}
+
+.right {
+  float: right;
+  width: 450px;
+}
+
+#logos img {
+  width: auto;
 }
