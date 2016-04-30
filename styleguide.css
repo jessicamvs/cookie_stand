@@ -1,0 +1,139 @@
+/*http://www.colorcombos.com/color-schemes/4292/ColorCombo4292.html*/
+/*http://stackoverflow.com/questions/7273927/image-greyscale-with-css-re-color-on-mouse-over*/
+
+#ultimateNav {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 19px;
+  border-bottom: solid;
+  border-color: #999999;
+  border-width: thin;
+  margin-top: 3%;
+  border-radius: 90%;
+}
+
+img {
+  height: 18px;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+}
+
+img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
+
+/*#ultimateNav section {
+  /*width: 100%;
+  margin: 0 auto;
+  }*/
+
+
+#ultimateNav section a {
+  text-decoration: none;
+  margin-left: 6%;
+  margin-right: 6%;
+  color: #999999;
+}
+
+main > header {
+  text-align: center;
+  font-size: 84px;
+  color: #6B6B6B;
+  font-family: 'Euphoria Script', cursive;
+  background: #DEADA1;
+  padding-top: 100px;
+  padding: 100px;
+}
+
+main > section {
+  margin-top: 3%;
+  border-top: solid;
+  border-bottom: solid;
+  border-color: #999999;
+  border-width: thin;
+  font-size: 24px;
+  color: #999999;
+  padding-top: 2%;
+}
+
+main > section > header {
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#colourPalette {
+  border-radius: 10%;
+}
+
+#swatches {
+  width: 524px;
+  margin: 0 auto;
+}
+
+.swatch {
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #999999;
+  margin-top: 5%;
+}
+
+.colorSwatch {
+  border-radius: 50%;
+}
+
+.color1 {
+  width: 100px;
+  height: 100px;
+  background: #DEADA1;
+}
+
+.color2 {
+  width: 100px;
+  height: 100px;
+  background: #FF8362;
+}
+
+.color3 {
+  width: 100px;
+  height: 100px;
+  background: #999999;
+}
+
+.color4 {
+  width: 100px;
+  height: 100px;
+  background: #6B6B6B;
+}
+
+.color5 {
+  width: 100px;
+  height: 100px;
+  background: #3C4663;
+}
+
+p {
+  text-align: center;
+  font-family: 'Josefin Slab', serif;
+  font-size: 16px;
+  color: black;
+  letter-spacing: .1em;
+}
+
+.left {
+  float: left;
+  width: 450px;
+  height: 210px;
+  margin-bottom: 3%;
+}
+
+.right {
+  float: right;
+  width: 450px;
+  height: 210px;
+}
+
+#logos img {
+  width: auto;
+}
