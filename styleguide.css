@@ -41,7 +41,6 @@ main > header {
   font-size: 84px;
   color: #6B6B6B;
   font-family: 'Euphoria Script', cursive;
-  /*font-family: 'Josefin Sans', sans-serif;*/
   background: #DEADA1;
   padding-top: 100px;
   padding: 100px;
@@ -125,13 +124,14 @@ p {
 .left {
   float: left;
   width: 450px;
-  height: 208px;
+  height: 210px;
   margin-bottom: 3%;
 }
 
 .right {
   float: right;
   width: 450px;
+  height: 210px;
 }
 
 #logos img {
