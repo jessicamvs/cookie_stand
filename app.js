@@ -9,19 +9,21 @@ function Store(storeName, minCust, maxCust, avgCookie) {
   this.demands = [];
 }
 
-Store.prototype.generateRandom = function() {
-  return Math.floor(Math.random() * (this.maxCust - this.minCust + 1) + this.minCust);
+Store.prototype.generateRandom = function(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
 };
 
-Store.prototype.hourlyDemand = function() {
-  for(hour in hours) {
-    this.demands.push(Math.floor(this.generateRandom() * this.avgCookie));
-    this.totalDemand += this.demands[hour];
+Store.prototype.hourlyDemand = function(hrArr, dmndArr, rand, min, max, avg, total) {
+  for(hour in hrArr) {
+    dmndArr.push(Math.floor(rand(min, max) * avg));
+    total += dmndArr[hour];
   }
+  return total;
 };
 
 Store.prototype.render = function() {
-  this.hourlyDemand();
+  this.totalDemand = this.hourlyDemand(hours, this.demands, this.generateRandom, this.minCust, this.maxCust, this.avgCookie, this.totalDemand);
+
   var sectionEl = document.getElementById('stores');
   var newStoreSection = document.createElement('section');
   newStoreSection.textContent = this.storeName;
@@ -47,8 +49,7 @@ var southcenter = new Store('Souchcenter', 11, 38, 1.9);
 var bellevueSquare = new Store('Bellevue Square', 20, 48, 3.3);
 var alki = new Store('Alki', 3, 24, 2.6);
 
-pikePlace.render();
-seaTacAirport.render();
-southcenter.render();
-bellevueSquare.render();
-alki.render();
+var stores = [pikePlace, seaTacAirport, southcenter, bellevueSquare, alki];
+for(idx in stores) {
+  stores[idx].render();
+}
