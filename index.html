@@ -6,6 +6,16 @@
   </head>
   <body>
     <main>
+      <form id="myForm">
+        <fieldset>
+          <legend>Add New Store</legend>
+          <label>Store Name: <input type="text" id="addStore"></label>
+          <label>Min: <input type="number" step="any" id="newMin"></label>
+          <label>Max: <input type="number" step="any" id="newMax"></label>
+          <label>Avg: <input type="number" step="any" id="newAvg"></label>
+          <input type="submit" value="Submit" id='submit'>
+        </fieldset>
+      </form>
       <section id="stores"></section>
     </main>
     <script src="app.js"></script>
