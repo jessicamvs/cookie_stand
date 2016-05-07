@@ -13,7 +13,7 @@ function Store(storeName, minCust, maxCust, avgCookie) {
 }
 
 Store.prototype.generateRandom = function(min, max) {
-  return Math.floor(Math.random() * (max - min + 1) + min);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 };
 
 Store.prototype.hourlyDemand = function() {
@@ -66,19 +66,24 @@ var alki = new Store('Alki', 3, 24, 2.6);
   };
 })();
 
-// Store.renderNew = function(name, minimum, maximum, average) {
-//   var newStore = new Store(name, minimum, maximum, average);
-//   // Use that global variable for `tbl` and target it's id (remember when you created it and set the id?)
-//   // Create a new instance of a store object using the parameters available in this method.
-// };
-//
-// document.getElementById('new-store').addEventListener('submit', function(event) {
-//   // Add an event listener to the form in our HTML
-  // Prevent the default behavior of the form submit
-  // NOTE: Stretch goal item; You need something to determine whether the store exists already in the table... perhaps a boolean?
-  // Assign the values of each input field to variables for later used
-  // NOTE: Stretch goal item: Iterate over your shops array to determine whether the inputs relate to a store that's already been created
-    // If so, you probably want to do something with that boolean value...
-  // NOTE: Stretch goal item: If the store exists, run the renderUpdate and pass in arguments to complete the call
-    // Otherwise, just take your new values and run the renderNew method
-  // Finally, set each of the values of your inputs to `null`
+document.getElementById('addNewStore').addEventListener('submit', function(event) {
+  event.preventDefault();
+  var newStore = new Store(event.target.addStore.value, parseInt(event.target.newMin.value), parseInt(event.target.newMax.value), parseInt(event.target.newAvg.value));
+  newStore.hourlyDemand();
+
+  var trNewEl = document.createElement('tr');
+  var thNewNameEl = document.createElement('th');
+  thNewNameEl.textContent = newStore.storeName;
+  trNewEl.appendChild(thNewNameEl);
+
+  for(hour in hours) {
+    var tdNewEl = document.createElement('td');
+    tdNewEl.textContent = newStore.demands[hour];
+    trNewEl.appendChild(tdNewEl);
+  };
+
+  var tdNewTotalEl = document.createElement('td');
+  tdNewTotalEl.textContent = newStore.totalDemand;
+  trNewEl.appendChild(tdNewTotalEl);
+  tableEl.appendChild(trNewEl);
+});
