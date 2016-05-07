@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cookie Stand</title>
+    <link rel="stylesheet" href="styleguide.css">
+  </head>
+  <body>
+    <main>
+      <form id="addNewStore">
+        <fieldset>
+          <legend>Add New Store</legend>
+          <label>Store Name: <input type="text" id="addStore"></label>
+          <label>Min: <input type="number" step="any" id="newMin"></label>
+          <label>Max: <input type="number" step="any" id="newMax"></label>
+          <label>Avg: <input type="number" step="any" id="newAvg"></label>
+          <input type="submit" value="Submit" id='submit'>
+        </fieldset>
+      </form>
+      <table id="myStores"></table>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

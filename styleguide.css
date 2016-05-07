@@ -32,12 +32,12 @@ img:hover {
 
 main > header {
   text-align: center;
-  font-size: 84px;
+  font-size: 62px;
   color: #6B6B6B;
   font-family: 'Euphoria Script', cursive;
   background: #DEADA1;
-  padding-top: 100px;
-  padding: 100px;
+  padding-top: 50px;
+  padding: 50px;
 }
 
 main > section {
