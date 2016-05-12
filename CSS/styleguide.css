@@ -1,5 +1,9 @@
 /*http://www.colorcombos.com/color-schemes/4292/ColorCombo4292.html*/
 /*http://stackoverflow.com/questions/7273927/image-greyscale-with-css-re-color-on-mouse-over*/
+body {
+  max-width: 960px;
+  margin: 0px auto;
+}
 
 #ultimateNav {
   font-family: 'Josefin Sans', sans-serif;
@@ -11,20 +15,14 @@
   border-radius: 90%;
 }
 
-img.align-left {
-  width: 250px;
-  float: left;
-}
-img {
+.small {
   height: 18px;
-  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
-  filter: gray; /* IE6-9
-  /*-webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+  border: .5px solid;
 }
 
-img:hover {
-  filter: none;
-  -webkit-filter: grayscale(0%);
+.medium {
+  height: 250px;
+  border: .5px solid #999999;
 }
 
 #ultimateNav section a {
@@ -34,7 +32,7 @@ img:hover {
   color: #999999;
 }
 
-main > header {
+body > header {
   text-align: center;
   font-size: 62px;
   color: #6B6B6B;
@@ -58,6 +56,14 @@ main > section {
 main > section > header {
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
+}
+
+.main {
+  float: left;
+}
+
+section {
+  overflow: auto;
 }
 
 #colourPalette {
@@ -134,10 +140,11 @@ p {
 
 #logos img {
   width: auto;
+  border: 0px;
 }
 
 table {
-  margin: 20px auto;
+  margin: 40px auto;
   border-collapse: collapse;
   text-align: center;
 }
@@ -154,4 +161,8 @@ th {
   text-transform: uppercase;
   border-bottom: 1px solid;
   padding: 10px;
+}
+
+form {
+  margin: 20px;
 }
