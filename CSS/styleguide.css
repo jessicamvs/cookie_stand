@@ -135,3 +135,23 @@ p {
 #logos img {
   width: auto;
 }
+
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+td {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 19px;
+  color: #999999;
+  padding: 10px;
+  border-bottom: 1px solid;
+}
+
+th {
+  text-transform: uppercase;
+  border-bottom: 1px solid;
+  padding: 10px;
+}
