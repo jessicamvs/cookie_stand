@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Salmon Cookies: Style Guide</title>
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Euphoria+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../CSS/styleguide.css">
+  </head>
+  <body>
+    <nav id='ultimateNav'>
+      <section>
+        <a href="../index.html"><img src="../images/salmon.png" alt="Salmon logo" class="small logoImg" /></a>
+        <a href="../index.html">Home</a>
+        <a href="../shop/shop.html">Shop</a>
+        <a href="Sales.html">Sales</a>
+        <a href="../styleguide/styleguide.html">Style Guide</a>
+      </section>
+    </nav>
+    <header>Salmon Cookie Sales</header>
+    <main>
+      <form id="addNewStore">
+        <fieldset>
+          <legend>Add New Store</legend>
+          <label>Store Name: <input type="text" id="addStore"></label>
+          <label>Min: <input type="number" step="any" id="newMin"></label>
+          <label>Max: <input type="number" step="any" id="newMax"></label>
+          <label>Avg: <input type="number" step="any" id="newAvg"></label>
+          <input type="submit" value="Submit" id='submit'>
+        </fieldset>
+      </form>
+      <table id="myStores"></table>
+    </main>
+    <footer>
+      <div>
+        <a href="#">Salmon Cookies</a>
+        <a href="#">info@salmoncookies.com</a>
+        <a href="#">Careers</a>
+        <a href="#">Event Orders</a>
+      </div>
+    </footer>
+    <script src="../JS/app.js"></script>
+  </body>
+</html>
