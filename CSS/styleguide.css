@@ -83,6 +83,16 @@ img {
   float: right;
 }
 
+.shop {
+  width: 676px;
+  margin: 20px auto;
+
+}
+
+figure {
+  display: inline-block;
+}
+
 #colourPalette {
   border-radius: 10%;
 }
