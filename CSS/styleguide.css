@@ -15,16 +15,6 @@ body {
   border-radius: 90%;
 }
 
-.small {
-  height: 18px;
-  border: .5px solid;
-}
-
-.medium {
-  height: 250px;
-  border: .5px solid #999999;
-}
-
 #ultimateNav section a {
   text-decoration: none;
   margin-left: 6%;
@@ -40,6 +30,10 @@ body > header {
   background: #DEADA1;
   padding-top: 50px;
   padding: 50px;
+}
+
+section {
+  margin: 20px;
 }
 
 main > section {
@@ -58,12 +52,35 @@ main > section > header {
   font-family: 'Josefin Sans', sans-serif;
 }
 
-.main {
+section {
+  overflow: auto;
+}
+
+.small {
+  height: 18px;
+  border: .5px solid;
+}
+
+.medium {
+  height: 200px;
+  border: .5px solid #999999;
+}
+
+img {
+  margin: 20px;
+}
+
+.logoImg {
+  margin: 0px;
+  border: 0px;
+}
+
+.leftImg {
   float: left;
 }
 
-section {
-  overflow: auto;
+.rightImg {
+  float: right;
 }
 
 #colourPalette {
@@ -71,7 +88,7 @@ section {
 }
 
 #swatches {
-  width: 524px;
+  width: 724px;
   margin: 0 auto;
 }
 
@@ -117,8 +134,11 @@ section {
   background: #3C4663;
 }
 
-p {
+.center {
   text-align: center;
+}
+
+p {
   font-family: 'Josefin Slab', serif;
   font-size: 16px;
   color: black;
@@ -127,14 +147,14 @@ p {
 
 .left {
   float: left;
-  width: 450px;
+  width: 425px;
   height: 210px;
   margin-bottom: 3%;
 }
 
 .right {
   float: right;
-  width: 450px;
+  width: 425px;
   height: 210px;
 }
 
