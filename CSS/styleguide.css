@@ -108,6 +108,7 @@ figure {
   font-family: 'Josefin Sans', sans-serif;
   color: #999999;
   margin-top: 5%;
+  text-align: center;
 }
 
 .colorSwatch {
@@ -166,6 +167,7 @@ p {
   float: right;
   width: 425px;
   height: 210px;
+  margin-bottom: 3%;
 }
 
 #logos img {
@@ -200,6 +202,7 @@ form {
 footer {
   background-color: #ABDDE0;
   height: 50px;
+  clear: both;
 }
 
 footer a {
