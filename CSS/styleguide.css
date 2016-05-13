@@ -141,7 +141,7 @@ figure {
 .color5 {
   width: 100px;
   height: 100px;
-  background: #3C4663;
+  background: #ABDDE0;
 }
 
 .center {
@@ -195,4 +195,24 @@ th {
 
 form {
   margin: 20px;
+}
+
+footer {
+  background-color: #ABDDE0;
+  height: 50px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #6B6B6B;
+  text-align: center;
+  font-family: 'Josefin Slab', serif;
+  margin: 20px;
+  font-style: bold;
+  font-size: 16px;
+}
+
+footer div {
+  width: 577px;
+  margin: 0 auto;
 }
